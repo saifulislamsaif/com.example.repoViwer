@@ -1,0 +1,83 @@
+package com.example.repoViwer.apiResponseModel
+
+data class RepoResponseModel (
+    val totalCount: Long,
+    val incompleteResults: Boolean,
+    val items: List<Item>
+)
+
+data class Item (
+    val id: Long,
+    val nodeID: String,
+    val name: String,
+    val fullName: String,
+    val private: Boolean,
+    val owner: Owner,
+    val htmlURL: String,
+    val description: String? = null,
+    val fork: Boolean,
+    val url: String,
+    val forksURL: String,
+    val hooksURL: String,
+    val issueEventsURL: String,
+    val eventsURL: String,
+    val assigneesURL: String,
+    val branchesURL: String,
+    val tagsURL: String,
+    val blobsURL: String,
+    val gitTagsURL: String,
+    val gitRefsURL: String,
+    val treesURL: String,
+    val statusesURL: String,
+    val languagesURL: String,
+    val stargazersURL: String,
+    val contributorsURL: String,
+    val subscribersURL: String,
+    val subscriptionURL: String,
+    val commitsURL: String,
+    val gitCommitsURL: String,
+    val commentsURL: String,
+    val issueCommentURL: String,
+    val contentsURL: String,
+    val compareURL: String,
+    val mergesURL: String,
+    val archiveURL: String,
+    val downloadsURL: String,
+    val issuesURL: String,
+    val pullsURL: String,
+    val milestonesURL: String,
+    val notificationsURL: String,
+    val labelsURL: String,
+    val releasesURL: String,
+    val deploymentsURL: String,
+    val createdAt: String,
+    val updatedAt: String,
+    val pushedAt: String,
+    val gitURL: String,
+    val sshURL: String,
+    val cloneURL: String,
+    val svnURL: String,
+    val homepage: String? = null,
+    val size: Long,
+    val stargazersCount: Long,
+
+)
+
+data class Owner (
+    val login: String,
+    val id: Long,
+    val nodeID: String,
+    val avatarURL: String,
+    val gravatarID: String,
+    val url: String,
+    val htmlURL: String,
+    val followersURL: String,
+    val followingURL: String,
+    val gistsURL: String,
+    val starredURL: String,
+    val subscriptionsURL: String,
+    val organizationsURL: String,
+    val reposURL: String
+)
+
+
