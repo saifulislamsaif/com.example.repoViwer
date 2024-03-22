@@ -1,7 +1,8 @@
-package com.example.repoViwer
+package com.example.repoViwer.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.repoViwer.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
