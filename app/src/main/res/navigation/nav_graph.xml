@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/gitHubRepoFragment">
+
+
+    <fragment
+        android:id="@+id/gitHubRepoFragment"
+        android:name="com.example.repoViwer.view.fragment.GitHubRepoFragment"
+        android:label="git_hub_repo_fragment"
+        tools:layout="@layout/git_hub_repo_fragment">
+        <action
+            android:id="@+id/action_gitHubRepoFragment_to_gitHubRepoDetailsFragment"
+            app:destination="@id/gitHubRepoDetailsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gitHubRepoDetailsFragment"
+        android:name="com.example.repoViwer.view.fragment.GitHubRepoDetailsFragment"
+        android:label="fragment_git_hub_repo_details"
+        tools:layout="@layout/fragment_git_hub_repo_details">
+        <action
+            android:id="@+id/action_gitHubRepoDetailsFragment_to_gitHubRepoFragment"
+            app:destination="@id/gitHubRepoFragment" />
+    </fragment>
+</navigation>
